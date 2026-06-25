@@ -1,0 +1,167 @@
+/* removes default spacing and makes sizing easier to manage */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+/* centers the card layout on the page */
+body {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "poppins", sans-serif;
+}
+/*makes the section take up the full screen height */
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Container that holds all three cards */
+.cards-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+}
+/* Sedan card styling */
+.sedans {
+    background: #E28525;
+    min-width: 230px;
+    min-height: 450px;
+    color: white;
+    flex: 1;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+/* Sedan button styling */
+.sedans button {
+    padding: 10px 20px;
+    color: #E28525;
+    border-radius: 30px;
+    border: none;
+    margin-top: 80%;
+}
+/* Sedan button hover effect */
+.sedans button:hover {
+    background: #B66A1E;
+    color: white;
+}
+/* Circle background behind the sedan icon */
+.sedan-car {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    color: black;
+    z-index: 1;
+    top: 40px;
+    border-radius: 50%;
+    background: #B66A1E;
+    overflow: visible;
+}
+/* Sedan icon size */
+.sedan-car img {
+    width: 50px;
+    margin-left: 15px;
+}
+/* SUV card styling */
+.suvs {
+    min-height: 450px;
+    min-width: 230px;
+    background: #016972;
+    color: white;
+    flex: 1;
+    position: relative;
+}
+/* SUV button styling */
+.suvs button {
+    padding: 10px 20px;
+    color: #016972;
+    border-radius: 30px;
+    border: none;
+    margin-top: 80%;
+}
+/* SUV button hover effect */
+.suvs button:hover {
+    background: #00555A;
+    color: white;
+}
+
+.suv-car {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    border-radius: 50%;
+    background: #00555A;
+    overflow: visible;
+}
+
+.suv-car img {
+    width: 70px;
+    margin-left: 5px;
+}
+
+.luxury {
+    min-width: 230px;
+    min-height: 450px;
+    background: #00403F;
+    color: white;
+    flex: 1;
+    position: relative;
+    border-radius: 0 10px 10px 0;
+}
+
+.luxury-car {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    color: black;
+    z-index: 1;
+    top: 40px;
+    border-radius: 50%;
+    background: #023332;
+    overflow: visible;
+}
+
+.luxury-car img {
+    width: 50px;
+    margin-left: 15px;
+
+}
+
+.luxury button {
+    padding: 10px 20px;
+    color: #00403F;
+    border-radius: 30px;
+    border: none;
+    margin-top: 80%;
+}
+
+.luxury button:hover {
+    background: #083533;
+    color: white;
+}
+
+.sedans,
+.suvs,
+.luxury {
+    padding: 50px 40px 40px;
+}
+
+p {
+    line-height: 1.4;
+    font-size: 10px;
+}
+
+h1 {
+    margin-bottom: 25px;
+    margin-top: 90px;
+    font-weight: normal;
+}
